@@ -136,9 +136,11 @@ On the High tokens graph, include the deployment models names higher than 100k.
 ## Troubleshooting
 
 In case you get this error, it's because the properties_s column doesn't exist on the selected Log analytics workspace or the name has changed.
+
 ![Error1](./images/Workbook_Error1.png)
 
 In case you get this error, it's because the resultSignature_d column doesn't exist on the selected Log analytics workspace or the name has changed.
+
 ![Error1](./images/Workbook_Error2.png)
 
 
