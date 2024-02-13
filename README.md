@@ -21,9 +21,9 @@ Based on that we can see if we require PTUs to provide a guarantee SLA.
 ## Requirements
 We require 2 different rights to get all the graphs.
 
-a)	Reader access to the OpenAI instances to check azure metrics values from the instances.
+*	Reader access to the OpenAI instances to check azure metrics values from the instances.
 
-b)	Export diagnostic settings (Request and Response Logs)  and reader access to the log analytics instance or at least on the AzureDiagnostics table.
+*	Export diagnostic settings (Request and Response Logs)  and reader access to the log analytics instance or at least on the AzureDiagnostics table.
 
 ## How to setup things
 
