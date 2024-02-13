@@ -29,36 +29,4 @@ b)	Export diagnostic settings (Request and Response Logs)  and reader access to 
 
 | Deployment Type | Link |
 |:--|:--|
-| Azure portal UI |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fwww.github.com%2FDavidNogueraBuxeda%2FOpenAI_workbook_overview%2Fmain%2Fblob%2Fworkload%2Farm_template%2FOverviewOpenAI.json/uiFormDefinitionUri/https%3A%2F%2Fwww.github.com%2FDavidNogueraBuxeda%2FOpenAI_workbook_overview%2Fmain%2Fblob%2Fworkload%2Farm_template%2FOverviewOpenAI.json) |
-
-
-
-| Azure portal UI |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.github.com%2FDavidNogueraBuxeda%2FOpenAI_workbook_overview%2Fmain%2Fworkload%2Farm_template%2FOverviewOpenAI.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FDavidNogueraBuxeda%2FOpenAI_workbook_overview%2Fmain%2Fworkload%2Farm_template%2FOverviewOpenAI.json) |
-
-
-https://raw.githubusercontent.com/DavidNogueraBuxeda/OpenAI_workbook_overview/master/workbook/OverviewOpenAI.json
-
-https://www.github.com/DavidNogueraBuxeda/OpenAI_workbook_overview/master/workbook/OverviewOpenAI.json
-
-
-https://github.com/Azure/azure-quickstart-templates/blob/master/sharepoint-adfs/azuredeploy.json
-But somehow now Azure seems to require this format:
-https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sharepoint-adfs/azuredeploy.json
-
-https://github.com/DavidNogueraBuxeda/OpenAI_workbook_overview/blob/main/workbook/arm_template/OverviewOpenAI.json
-
-https://github.com/DavidNogueraBuxeda/OpenAI_workbook_overview/blob/main/workbook/arm_template/OverviewOpenAI.json
-
-
-https://github.com/DavidNogueraBuxeda/OpenAI_workbook_overview/blob/main/workbook/arm_template/OverviewOpenAI.json
-
-
-https%3A%2F%2Fraw.githubusercontent.com%2FOpenAI_workbook_overview%2Fmain%2Fworkload%2arm_template%2FOverviewOpenAI.json
-
-https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2OpenAI_workbook_overview%2Fmain%2Fworkbook%2Farm_template%2FOverviewOpenAI.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2OpenAI_workbook_overview%2Fmain%2Fworkbook%2Farm_template%2FOverviewOpenAI.json
-
-| Azure portal UI |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Favdaccelerator%2Fmain%2Fworkload%2Farm%2Fdeploy-baseline.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Favdaccelerator%2Fmain%2Fworkload%2Fportal-ui%2Fportal-ui-baseline.json) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Favdaccelerator%2Fmain%2Fworkload%2Farm%2Fdeploy-baseline.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Favdaccelerator%2Fmain%2Fworkload%2Fportal-ui%2Fportal-ui-baseline.json)|
-| Command line (Bicep/ARM) | [![Powershell/Azure CLI](./workload/docs/icons/powershell.png)](./workload/bicep/readme.md#avd-accelerator-baseline) |
-| Terraform | [![Terraform](./workload/docs/icons/terraform.png)](./workload/terraform/greenfield/readme.md) |
-
-
+| Azure portal UI |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FDavidNogueraBuxeda%2FOpenAI_workbook_overview%2Fmain%2Fworkbook%2Farm_template%2FOverviewOpenAI.json) |
