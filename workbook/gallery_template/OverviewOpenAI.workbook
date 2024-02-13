@@ -109,10 +109,16 @@
             ],
             "isHiddenWhenLocked": true,
             "typeSettings": {
-              "additionalResourceOptions": []
+              "additionalResourceOptions": [
+                "value::all"
+              ],
+              "showDefault": false
             },
             "queryType": 1,
-            "resourceType": "microsoft.resourcegraph/resources"
+            "resourceType": "microsoft.resourcegraph/resources",
+            "value": [
+              "value::all"
+            ]
           }
         ],
         "style": "pills",
@@ -315,9 +321,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 86400000
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -438,9 +441,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 86400000
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -565,9 +565,6 @@
           "{OpenAIResourceId}"
         ],
         "timeContextFromParameter": "TimeSelection",
-        "timeContext": {
-          "durationMs": 86400000
-        },
         "timeGrain": "PT1M",
         "metrics": [
           {
@@ -636,9 +633,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 86400000
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -669,9 +663,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 86400000
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -723,9 +714,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 86400000
-              },
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
