@@ -20,10 +20,31 @@ Based on that we can see if we require PTUs to provide a guarantee SLA.
 
 
 ### Explained workbook
+
+
 First line there's the link with the default quotas.
 Then select TimeRange the openAI instance and the workspace where you send the logs.
-![workbook 2](./images/Workbook_Selection.png)
+![Group 1](./images/Group1.png)
 Select TimeRange , the OpenAI Instance and  Log analytics Workspace were you send the logs.
+
+![Group 2](./images/Group2.png)
+On the left it's a markdown to manually tune to know which Deployment names is using each Usecase, on the middle it shows which deployment it's deployed on each instance and on the left it checks the health of the service on the selected Timerange.
+
+![Group 3](./images/Group3.png)
+There are two graphs on the left it's necessary to tune the deployment names higher than 100k, and on the right include just the deployment names higher than 100k.
+Go to section **Fine tunning of the Workbook once deployed** to do it.
+
+![Group 4](./images/Group4.png)
+The left graph shows the maxium PTU's percentage of the models on the selected time range, and on the right the same value for the last 30 days.
+
+![Group 5](./images/Group5.png)
+The left graph shows the number of requests and on the right graph it shows the RateLimit with the successfull requests and total Errors.
+
+![Group 6](./images/Group6.png)
+The left graph shows the latency of the service and on the right graph the number of events exported on the workspace.
+
+![Group 7](./images/Group7.png)
+The left graph it shows a donnut to see how many events we got, on the middle the operations for each assignature and on the right side we can see the  >=400 errors.
 
 
 

@@ -195,9 +195,6 @@
                 "{AlallInstances}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 0
-              },
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
@@ -838,7 +835,7 @@
             "type": 3,
             "content": {
               "version": "KqlItem/1.0",
-              "query": "AzureDiagnostics\r\n| where ResourceProvider == 'MICROSOFT.COGNITIVESERVICES' and Category == 'RequestResponse' and ResourceId == \"{OpenAIResourceId}\"\r\n| project TimeGenerated, ResourceProvider, OperationName, resultSignature_d\r\n| where resultSignature_d == \"400\" or resultSignature_d == \"500\"\r\n| summarize Count=count() by bin(TimeGenerated, 1m), resultSignature_d,OperationName\r\n  ",
+              "query": "AzureDiagnostics\r\n| where ResourceProvider == 'MICROSOFT.COGNITIVESERVICES' and Category == 'RequestResponse' and ResourceId == \"{OpenAIResourceId}\"\r\n| project TimeGenerated, ResourceProvider, OperationName, resultSignature_d\r\n| where resultSignature_d >= 400\r\n| summarize Count=count() by bin(TimeGenerated, 1m), resultSignature_d,OperationName\r\n  ",
               "size": 0,
               "title": "Error Events",
               "timeContextFromParameter": "TimeSelection",
