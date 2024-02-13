@@ -13,7 +13,7 @@ With this workbook, we want to achieve a comprehensive and easy-to-use dashboard
 - How many openAI instances can we need to improve our efficiency and quality?
 To answer these questions, we have designed several graphs and tables that display the relevant data and information for each openai instance. In the following sections, we will explain the details of each graph and how to interpret them.
 
-## What do we want to show and why (frequent client asks/problems) -> explain details of each graph
+## What do we want to show and why
 One of the main questions that we want to answer is how many openAI instances can we need to improve our efficiency and quality. This depends on several factors, such as the number of users, the complexity of the queries, the availability of the resources, and the budget constraints. 
 To help us estimate the optimal number of openAI instances for our needs, we have created a graph that shows the relationship between the number of instances and the performance metrics, such as accuracy, speed, and performance.
 Based on that we can see if we require PTUs to provide a guarantee SLA.
