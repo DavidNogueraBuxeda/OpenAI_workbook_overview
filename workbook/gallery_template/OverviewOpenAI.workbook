@@ -71,8 +71,7 @@
             },
             "timeContextFromParameter": "TimeSelection",
             "queryType": 1,
-            "resourceType": "microsoft.resourcegraph/resources",
-            "value": null
+            "resourceType": "microsoft.operationalinsights/workspaces"
           },
           {
             "id": "b5d31f2c-0423-487b-bda8-da7171617e21",
@@ -98,7 +97,7 @@
         ],
         "style": "pills",
         "queryType": 1,
-        "resourceType": "microsoft.resourcegraph/resources"
+        "resourceType": "microsoft.operationalinsights/workspaces"
       },
       "customWidth": "100",
       "name": "parameters - 1",
@@ -170,9 +169,6 @@
                 "{AlallInstances}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 172800000
-              },
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
@@ -296,6 +292,9 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 0
+              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -360,16 +359,6 @@
                   }
                 }
               },
-              "filters": [
-                {
-                  "id": "1",
-                  "key": "ModelDeploymentName",
-                  "operator": 1,
-                  "values": [
-                    "az-sec-cxb-inn-idmia-trsvsl-gpt35t02-pro"
-                  ]
-                }
-              ],
               "gridSettings": {
                 "formatters": [
                   {
@@ -428,7 +417,7 @@
               ],
               "timeContextFromParameter": "TimeSelection",
               "timeContext": {
-                "durationMs": 172800000
+                "durationMs": 0
               },
               "timeGrain": "PT1M",
               "metrics": [
@@ -436,7 +425,7 @@
                   "namespace": "microsoft.cognitiveservices/accounts",
                   "metric": "microsoft.cognitiveservices/accounts-Azure OpenAI  Usage-ProcessedPromptTokens",
                   "aggregation": 1,
-                  "splitBy": "ModelDeploymentName"
+                  "splitBy": null
                 }
               ],
               "title": "Sum Processed Prompt Tokens by Multiple Dimensions HIGH Tokens",
@@ -494,16 +483,6 @@
                   }
                 }
               },
-              "filters": [
-                {
-                  "id": "1",
-                  "key": "ModelDeploymentName",
-                  "operator": 0,
-                  "values": [
-                    "az-sec-cxb-inn-idmia-trsvsl-gpt35t02-pro"
-                  ]
-                }
-              ],
               "gridSettings": {
                 "formatters": [
                   {
@@ -566,7 +545,7 @@
         ],
         "timeContextFromParameter": "TimeSelection",
         "timeContext": {
-          "durationMs": 172800000
+          "durationMs": 0
         },
         "timeGrain": "PT1M",
         "metrics": [
@@ -574,7 +553,7 @@
             "namespace": "microsoft.cognitiveservices/accounts",
             "metric": "microsoft.cognitiveservices/accounts-Azure OpenAI  Usage-AzureOpenAIProvisionedManagedUtilization",
             "aggregation": 3,
-            "splitBy": "ModelDeploymentName"
+            "splitBy": null
           }
         ],
         "title": "PTU's Max Percentage Usage",
@@ -637,9 +616,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 172800000
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -670,9 +646,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 172800000
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -724,9 +697,6 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 172800000
-              },
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
@@ -883,7 +853,7 @@
     }
   ],
   "fallbackResourceIds": [
-    "azure monitor"
+    "openai instance overview"
   ],
   "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
 }

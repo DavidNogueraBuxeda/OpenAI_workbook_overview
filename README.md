@@ -18,6 +18,15 @@ One of the main questions that we want to answer is how many openAI instances ca
 To help us estimate the optimal number of openAI instances for our needs, we have created a graph that shows the relationship between the number of instances and the performance metrics, such as accuracy, speed, and performance.
 Based on that we can see if we require PTUs to provide a guarantee SLA.
 
+
+### Explained workbook
+First line there's the link with the default quotas.
+Then select TimeRange the openAI instance and the workspace where you send the logs.
+![workbook 2](./images/Workbook_Selection.png)
+Select TimeRange , the OpenAI Instance and  Log analytics Workspace were you send the logs.
+
+
+
 ## Requirements
 We require 2 different rights to get all the graphs.
 
@@ -88,9 +97,17 @@ There are two different tasks to prepare the workbook:
         * Click on _'OPENAI INSTANCE OVERVIEW'_ Workbook.
 
 Start using the Workbook and review your OPENAI INSTANCE OVERVIEW workbook.
-Select TimeRange , the OpenAI Instance and  Log analytics Workspace were you send the logs.
 
 
 ## Fine tunning of the Workbook once deployed
 
-The playbook it's splitted between 
+There's a group section fo two graphs LOW/MEDIUM and HIGH tokens that it's necessary to customize it, just edit.
+
+![Tokens](./images/2Graph_tokens.png)
+
+On the Low and Medium tokens graph, exclude the deployment models names higher than 100k.
+![LowTokens](./images/Low_tokens.png)
+
+On the High tokens graph, include the deployment models names higher than 100k.
+![highTokens](./images/High_tokens.png)
+
