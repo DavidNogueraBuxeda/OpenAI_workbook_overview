@@ -50,9 +50,6 @@
                 }
               ],
               "allowCustom": true
-            },
-            "value": {
-              "durationMs": 86400000
             }
           },
           {
@@ -97,6 +94,25 @@
             "queryType": 1,
             "resourceType": "microsoft.resourcegraph/resources",
             "value": null
+          },
+          {
+            "id": "3cb1a3d1-815e-4a14-9ca8-014c3f57bb76",
+            "version": "KqlParameterItem/1.0",
+            "name": "AlallInstances",
+            "type": 5,
+            "multiSelect": true,
+            "quote": "'",
+            "delimiter": ",",
+            "query": "//resources | where type =~ 'Microsoft.operationsmanagement/solutions' | where name contains //'SecurityInsights' | project id //= tostring(properties.workspaceResourceId)\r\n\r\nwhere kind =~ 'OpenAI'\r\n| project value =id",
+            "crossComponentResources": [
+              "value::all"
+            ],
+            "isHiddenWhenLocked": true,
+            "typeSettings": {
+              "additionalResourceOptions": []
+            },
+            "queryType": 1,
+            "resourceType": "microsoft.resourcegraph/resources"
           }
         ],
         "style": "pills",
@@ -173,6 +189,9 @@
                 "{AlallInstances}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 0
+              },
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
@@ -296,6 +315,9 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 86400000
+              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -416,6 +438,9 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 86400000
+              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -540,6 +565,9 @@
           "{OpenAIResourceId}"
         ],
         "timeContextFromParameter": "TimeSelection",
+        "timeContext": {
+          "durationMs": 86400000
+        },
         "timeGrain": "PT1M",
         "metrics": [
           {
@@ -608,6 +636,9 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 86400000
+              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -638,6 +669,9 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 86400000
+              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
@@ -689,6 +723,9 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
+              "timeContext": {
+                "durationMs": 86400000
+              },
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
