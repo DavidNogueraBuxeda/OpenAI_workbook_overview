@@ -58,7 +58,7 @@
             "name": "OpenAIResourceId",
             "type": 5,
             "isRequired": true,
-            "query": "//resources | where type =~ 'Microsoft.operationsmanagement/solutions' | where name contains //'SecurityInsights' | project id //= tostring(properties.workspaceResourceId)\r\n\r\nwhere kind =~ 'OpenAI'\r\n| project value =toupper(id)",
+            "query": "",
             "crossComponentResources": [
               "value::all"
             ],
@@ -71,7 +71,8 @@
             },
             "timeContextFromParameter": "TimeSelection",
             "queryType": 1,
-            "resourceType": "microsoft.operationalinsights/workspaces"
+            "resourceType": "microsoft.resourcegraph/resources",
+            "value": null
           },
           {
             "id": "b5d31f2c-0423-487b-bda8-da7171617e21",
@@ -97,7 +98,7 @@
         ],
         "style": "pills",
         "queryType": 1,
-        "resourceType": "microsoft.operationalinsights/workspaces"
+        "resourceType": "microsoft.resourcegraph/resources"
       },
       "customWidth": "100",
       "name": "parameters - 1",
@@ -292,16 +293,12 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 0
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
                   "metric": "microsoft.cognitiveservices/accounts-Azure OpenAI  Usage-ProcessedPromptTokens",
-                  "aggregation": 1,
-                  "splitBy": null
+                  "aggregation": 1
                 }
               ],
               "title": "Sum Processed Prompt Tokens by Multiple Dimensions LOW/MEDIUM Tokens",
@@ -416,16 +413,12 @@
                 "{OpenAIResourceId}"
               ],
               "timeContextFromParameter": "TimeSelection",
-              "timeContext": {
-                "durationMs": 0
-              },
               "timeGrain": "PT1M",
               "metrics": [
                 {
                   "namespace": "microsoft.cognitiveservices/accounts",
                   "metric": "microsoft.cognitiveservices/accounts-Azure OpenAI  Usage-ProcessedPromptTokens",
-                  "aggregation": 1,
-                  "splitBy": null
+                  "aggregation": 1
                 }
               ],
               "title": "Sum Processed Prompt Tokens by Multiple Dimensions HIGH Tokens",
@@ -544,16 +537,12 @@
           "{OpenAIResourceId}"
         ],
         "timeContextFromParameter": "TimeSelection",
-        "timeContext": {
-          "durationMs": 0
-        },
         "timeGrain": "PT1M",
         "metrics": [
           {
             "namespace": "microsoft.cognitiveservices/accounts",
             "metric": "microsoft.cognitiveservices/accounts-Azure OpenAI  Usage-AzureOpenAIProvisionedManagedUtilization",
-            "aggregation": 3,
-            "splitBy": null
+            "aggregation": 3
           }
         ],
         "title": "PTU's Max Percentage Usage",
