@@ -80,7 +80,7 @@ There are two different tasks to prepare the workbook:
 
         * Click in the ‘Save’ button on the toolbar
 
-        ![Save monitoring workbook](./images/workbook_saveas.png)
+        ![Save monitoring workbook](./images/Workbook_saveas.png)
 
         * Select a name and where to save the Workbook:
 
