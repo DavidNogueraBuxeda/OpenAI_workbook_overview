@@ -38,57 +38,57 @@ There are two different tasks to prepare the workbook:
         <img src="./images/Open_Ai_Diagnostic_Settings.png">
 
 
-* Deploy the workbook:
+* Deploy the workbook, we have two ways:
 
-    * Deploy it using the ARM deployment link:
+    * (**Recommended**) Deploy it using the ARM deployment link:
 
         | Deployment Type | Link |
         |:--|:--|
         | Azure portal UI |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FDavidNogueraBuxeda%2FOpenAI_workbook_overview%2Fmain%2Fworkbook%2Farm_template%2FOverviewOpenAI.json) |
 
 
-    * Importing this Workbook to your Azure environment.
+    * (**Manual**)Importing this Workbook to your Azure environment.
 
-Follow this steps:
+        Follow this steps:
 
-* Login to [Azure Portal](https://portal.azure.com/) <img src="../../docs/icons/azure.png" width="20" height="20">
-* Go to _'Azure Workbooks'_ and select Create
+        * Login to [Azure Portal](https://portal.azure.com/) <img src="./images/azure.png" width="20" height="20">
+        * Go to _'Azure Workbooks'_ and select Create
 
-![workbook 1](./images/Monitor_Workbooks_create.png)
+        ![workbook 1](./images/Monitor_Workbooks_create.png)
 
-* Click on _'+ New'_
-* Open the Advanced Editor using the _'</>'_ button on the toolbar
+        * Click on _'+ New'_
+        * Open the Advanced Editor using the _'</>'_ button on the toolbar
 
-![Create monitoring workbook](./images/Workbook_AdvancedEditor.png)
+        ![Create monitoring workbook](./images/Workbook_AdvancedEditor.png)
 
-* Select the _'Gallery Template'_ (step 1)
-* Replace the JSON in the gallery template to the [Deep Insights workbook](https://raw.githubusercontent.com/2FDavidNogueraBuxeda/2FOpenAI_workbook_overview/main/workbooks/gallery_template/OverviewOpenAI.workbook
-) (step 2)
-* Click _'Apply'_ (step 3)
+        * Select the _'Gallery Template'_ (step 1)
+        * Replace the JSON in the gallery template to the [OpenAI Instance Overview workbook](https://raw.githubusercontent.com/2FDavidNogueraBuxeda/2FOpenAI_workbook_overview/main/workbooks/gallery_template/OverviewOpenAI.workbook
+        ) (step 2)
+        * Click _'Apply'_ (step 3)
 
 
-![Create monitoring workbook](./images/Workbook_Apply.png)
+        ![Create monitoring workbook](./images/Workbook_Apply.png)
 
-* Click in the ‘Save’ button on the toolbar
+        * Click in the ‘Save’ button on the toolbar
 
-![Save monitoring workbook](./images/workbook_saveas.png)
+        ![Save monitoring workbook](./images/workbook_saveas.png)
 
-* Select a name and where to save the Workbook:
+        * Select a name and where to save the Workbook:
 
-* Title: _'OPENAI INSTANCE OVERVIEW'_
-* Subscription: _Subscription Name_
-* Resource group: _Resource Group Name_
-* Location: _Region_
-* Click _'Save'_
-  
-The Workbook is ready to use!
+        * Title: _'OPENAI INSTANCE OVERVIEW'_
+        * Subscription: _Subscription Name_
+        * Resource group: _Resource Group Name_
+        * Location: _Region_
+        * Click _'Save'_
+        
+        The Workbook is ready to use!
 
-* From Azure portal search for _'Log Analytics Workspace'_ and click on your chosen Log Analytics Workspace
-* Click on workbooks
-* Click on _'OPENAI INSTANCE OVERVIEW'_ Workbook.
+        * From Azure portal search for _'Log Analytics Workspace'_ and click on your chosen Log Analytics Workspace
+        * Click on workbooks
+        * Click on _'OPENAI INSTANCE OVERVIEW'_ Workbook.
 
-Start using the Workbook and review your Deep Insights workbook.
-Filter by specific subscription is optional.
+Start using the Workbook and review your OPENAI INSTANCE OVERVIEW workbook.
+Select TimeRange , the OpenAI Instance and  Log analytics Workspace were you send the logs.
 
 
 ## Fine tunning of the Workbook once deployed
