@@ -38,6 +38,8 @@ b)	Export diagnostic settings (Request and Response Logs)  and reader access to 
 
 https://raw.githubusercontent.com/DavidNogueraBuxeda/OpenAI_workbook_overview/master/workbook/OverviewOpenAI.json
 
+https://www.github.com/DavidNogueraBuxeda/OpenAI_workbook_overview/master/workbook/OverviewOpenAI.json
+
 
 https://github.com/Azure/azure-quickstart-templates/blob/master/sharepoint-adfs/azuredeploy.json
 But somehow now Azure seems to require this format:
