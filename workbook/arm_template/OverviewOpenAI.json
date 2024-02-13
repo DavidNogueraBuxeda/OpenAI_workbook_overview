@@ -45,6 +45,7 @@
                 "sourceId": "[parameters('workbookSourceId')]",
                 "category": "[parameters('workbookType')]"
             }
+        }
     ],
     "outputs": {
         "workbookId": {
