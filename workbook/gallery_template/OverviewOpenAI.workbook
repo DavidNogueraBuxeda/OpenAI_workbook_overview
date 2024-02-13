@@ -50,6 +50,9 @@
                 }
               ],
               "allowCustom": true
+            },
+            "value": {
+              "durationMs": 86400000
             }
           },
           {
@@ -58,7 +61,7 @@
             "name": "OpenAIResourceId",
             "type": 5,
             "isRequired": true,
-            "query": "",
+            "query": "//resources | where type =~ 'Microsoft.operationsmanagement/solutions' | where name contains //'SecurityInsights' | project id //= tostring(properties.workspaceResourceId)\r\n\r\nwhere kind =~ 'OpenAI'\r\n| project value =toupper(id)",
             "crossComponentResources": [
               "value::all"
             ],
