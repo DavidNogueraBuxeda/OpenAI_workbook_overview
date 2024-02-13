@@ -1,4 +1,4 @@
-# OpenAI_workbook_overview
+# OpenAI Workbook Overview
 Workbook to overview the OpenAI instances deployed on Azure.
 
 
